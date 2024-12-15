@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active {
+	color: #34B749;
+}
+/* filter: drop-shadow(0 0 2em #646cffaa); */
+
+@media screen and (width <= 1020px) {
+	.active {
+		@apply bg-zinc-100;
+	}
+	.dark .active {
+		@apply bg-zinc-800;
+	}
+}
